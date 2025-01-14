@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="nostyle.css" />
+    <title>Document</title>
+  </head>
+  <body class="bg-amber-50">
+    <header class="pt-6 flex justify-between items-center">
+      <div class="flex gap-4">
+        <img src="assets/logo.svg" class="size-24 w-64" />
+      </div>
+      <button
+        class="text-2xl mr-5 bg-zinc-600 text-amber-50 p-3 rounded-2xl transition duration-300 ease-in-out hover:shadow-2xl hover:scale-[110%]"
+        id="regBtn"
+      >
+        РЕГИСТРАЦИЯ
+      </button>
+    </header>
+    <main>
+      <section class="flex items-center h-[750px] justify-between p-12">
+        <div class="flex flex-col gap-8">
+          <span class="text-orange-300 leading-[140px] text-[125px]"
+            >ТУТ ПРОЕКТЫ<br />
+            ГРУППЫ</span
+          >
+          <span class="text-7xl text-zinc-600">3ИСИП722</span>
+        </div>
+        <img src="assets/man.svg" class="size-[500px]" />
+      </section>
+      <section class="bg-cyan-500 flex justify-around p-12">
+        <div class="flex gap-12">
+          <div class="flex gap-5 flex-col">
+            <h1 class="text-4xl text-white">
+              ВВЕДИТЕ ФАМИЛИЮ И ИМЯ<br />ЧТОБЫ НАЙТИ РАБОТУ
+            </h1>
+            <input
+              type="text"
+              placeholder="ФАМИЛИЯ"
+              class="text-4xl p-3 bg-white rounded-xl text-zinc-600"
+              id="addLastName"
+            />
+            <input
+              type="text"
+              placeholder="ИМЯ"
+              class="text-4xl p-3 bg-white rounded-xl text-zinc-600"
+              id="addName"
+            />
+          </div>
+          <div class="flex justify-end gap-4 flex-col">
+            <div class="flex items-center gap-4">
+              <span class="text-4xl text-white">ЛАБОРАТОРНАЯ</span>
+              <select
+                class="text-4xl bg-cyan-500 text-white border-4 border-white rounded-xl p-2"
+                id="numWork"
+              >
+                <option>14</option>
+              </select>
+            </div>
+            <button
+              class="text-white border-4 p-2 text-4xl border-white rounded-xl itext-4xl"
+            >
+              НАЙТИ
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="bg-amber-50">
+        <h1 class="text4-xl" id="name"></h1>
+        <div class=""></div>
+      </section>
+    </main>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>
