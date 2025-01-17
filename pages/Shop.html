@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Корзина</title>
+  </head>
+  <body class="bg-neutral-100 w-[90%] ml-auto mr-auto">
+    <header class="pt-6 flex justify-between items-center">
+      <a href="/index.html"
+        ><img
+          src="/assets/logo.svg"
+          class="w-32 transition duration-300 hover:scale-[110%]"
+          alt="Logo"
+      /></a>
+      <span class="text-xl text-zinc-500">Белолипецкий Н.А.</span>
+    </header>
+    <main class="mt-20">
+      <h1 class="text-zinc-600 mb-12 text-3xl">Корзина</h1>
+      <section class="flex justify-between">
+        <div class="flex flex-col gap-8">
+          <div
+            class="flex justify-between items-center p-4 rounded-md bg-white"
+          >
+            <div class="flex gap-3">
+              <input
+                type="checkbox"
+                class="peer size-6 appearance-none border-4 border-blue-500 rounded-md transition duration-100 ease-in-out checked:bg-blue-500"
+                checked
+              />
+              <button
+                class="text-zinc-600 text-md transition duration-300 ease-out hover:scale-[102%] hover:text-red-400 hover:border-red-400 bg-white"
+                id="delButn"
+              >
+                Удалить выбранное
+              </button>
+            </div>
+            <button
+              class="pt-1 pb-1 pr-3 pl-3 rounded-md font-bold bg-blue-500 transition duration-300 hover:scale-[105%] hover:shadow-md text-white"
+            >
+              Поделиться
+            </button>
+          </div>
+          <div
+            class="flex gap-14 items-start bg-white rounded-md p-4"
+            id="itmSection"
+          >
+            <div class="flex items-center">
+              <input
+                type="checkbox"
+                class="peer size-6 appearance-none border-4 border-blue-500 rounded-md transition duration-100 ease-in-out checked:bg-blue-500"
+                checked
+              />
+              <img src="/assets/Item.png" class="size-32 ml-4" />
+              <div
+                class="flex ml-12 gap-10 items-start justify-between flex-col"
+              >
+                <div class="flex flex-col">
+                  <h1 class="text-md text-zinc-600">
+                    Сумка женская через плечо
+                  </h1>
+                  <span class="text-sm text-zinc-400">Цвет серый</span>
+                </div>
+                <div class="flex items-center">
+                  <svg
+                    width="34"
+                    height="27"
+                    viewBox="0 0 43 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21.8936 5.64748C35.3648 -11.9043 61.759 15.1859 21.8936 36C-19.6816 15.3961 8.26526 -11.9043 21.8936 5.64748Z"
+                      fill="#565656"
+                    />
+                  </svg>
+                  <svg
+                    width="38"
+                    height="34"
+                    viewBox="0 0 48 44"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20 3.66666L18 5.49999H10C8.8 5.49999 8 6.23332 8 7.33332C8 8.43332 8.8 9.16666 10 9.16666H14H34H38C39.2 9.16666 40 8.43332 40 7.33332C40 6.23332 39.2 5.49999 38 5.49999H30L28 3.66666H20ZM10 12.8333V36.6667C10 38.6833 11.8 40.3333 14 40.3333H34C36.2 40.3333 38 38.6833 38 36.6667V12.8333H10ZM18 16.5C19.2 16.5 20 17.2333 20 18.3333V34.8333C20 35.9333 19.2 36.6667 18 36.6667C16.8 36.6667 16 35.9333 16 34.8333V18.3333C16 17.2333 16.8 16.5 18 16.5ZM30 16.5C31.2 16.5 32 17.2333 32 18.3333V34.8333C32 35.9333 31.2 36.6667 30 36.6667C28.8 36.6667 28 35.9333 28 34.8333V18.3333C28 17.2333 28.8 16.5 30 16.5Z"
+                      fill="#565656"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <h1 class="text-md ml-4 text-red-500 font-bold">300₽</h1>
+            <div class="flex ml-4 items-center gap-4">
+              <button
+                class="pr-4 pl-4 border-4 border-blue-500 text-blue-500 rounded-md transition duration-200 ease-out hover:scale-[105%] hover:bg-blue-500 hover:text-white"
+                id="plBut"
+              >
+                +
+              </button>
+              <span class="text-md flex justify-center text-600 w-4" id="itmNum"
+                >1</span
+              >
+              <button
+                class="pr-4 pl-4 border-4 border-blue-500 text-blue-500 rounded-md transition duration-200 ease-out hover:scale-[105%] hover:bg-blue-500 hover:text-white"
+                id="mnBut"
+              >
+                -
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-10 bg-white rounded-md p-4">
+          <a
+            href="#"
+            class="text-xl font-semibold transition duration-300 hover:scale-[102%] text-blue-500"
+            >Выбрать адрес доставки</a
+          >
+          <div class="flex flex-col gap-1">
+            <div class="flex justify-between">
+              <span class="text-md text-zinc-500">Товары, 1 шт</span>
+              <span class="text-md text-zinc-500" id="coustItm">300₽</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-md text-zinc-500">Моя скидка</span>
+              <span class="text-md text-red-500">- 9₽</span>
+            </div>
+          </div>
+          <div class="flex justify-between border-b-4 border-blue-500 pb-4">
+            <h1 class="text-2xl text-zinc-700">Итого</h1>
+            <h1 class="text-2xl text-zinc-700" id="endCoustItm">300</h1>
+          </div>
+          <button
+            class="pl-32 pr-32 pt-6 pb-6 text-5xl rounded-2xl font-semibold bg-blue-500 text-white transition duration-200 hover:scale-[101%]"
+          >
+            Купить
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="/script/shopScript.js"></script>
+  </body>
+</html>

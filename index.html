@@ -4,73 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="nostyle.css" />
-    <title>Document</title>
+    <title>Главная страница</title>
   </head>
-  <body class="bg-amber-50">
+  <body class="bg-neutral-100 w-[90%] ml-auto mr-auto">
     <header class="pt-6 flex justify-between items-center">
-      <div class="flex gap-4">
-        <img src="assets/logo.svg" class="size-24 w-64" />
-      </div>
-      <!-- <button
-          class="text-2xl mr-5 bg-zinc-600 text-amber-50 p-3 rounded-2xl transition duration-300 ease-in-out hover:shadow-2xl hover:scale-[110%]"
-          id="regBtn"
-        >
-          РЕГИСТРАЦИЯ
-        </button> -->
+      <a href="#"
+        ><img
+          src="assets/logo.svg"
+          class="w-32 transition-all duration-300 hover:scale-[110%]"
+      /></a>
+      <span class="text-xl text-zinc-500">Белолипецкий Н.А.</span>
     </header>
     <main>
-      <section class="flex items-center h-[700px] justify-between p-12">
-        <div class="flex flex-col gap-8">
-          <span class="text-orange-300 leading-[140px] text-[125px]"
-            >ТУТ ПРОЕКТЫ<br />
-            ГРУППЫ</span
-          >
-          <span class="text-7xl text-zinc-600">3ИСИП722</span>
-        </div>
-        <img src="assets/man.svg" class="size-[500px]" />
-      </section>
-
-      <section class="bg-zinc-600 p-12 flex flex-col gap-8 items-center">
-        <h1 class="text-6xl text-white" id="name">РАБОТЫ СТУДЕНТА</h1>
+      <section class="flex flex-col gap-8 items-center">
+        <h1 class="text-4xl text-zinc-500" id="name">Работы студента</h1>
         <div class="flex gap-12">
-          <div class="flex gap-5 flex-col">
+          <div class="flex items-center gap-5 flex-col">
             <div class="flex items-center gap-4">
-              <span class="text-4xl text-white">ЛАБОРАТОРНАЯ</span>
-              <select class="text-4xl bg-white rounded-xl p-2" id="numWork">
+              <span class="text-2xl text-zinc-500">ЛАБОРАТОРНАЯ</span>
+              <select
+                class="text-2xl bg-blue-500 text-white rounded-xl p-2"
+                id="numWork"
+              >
                 <option>n</option>
               </select>
             </div>
           </div>
           <button
-            class="text-zinc-600 bg-white p-3 transition duration-300 hover:shadow-xl hover:scale-[110%] text-4xl rounded-xl itext-4xl"
+            class="pr-4 pb-1 pt-1 pl-4 transition duration-300 ease-in-out hover:shadow-2xl hover:scale-[110%] text-white bg-blue-500 text-2xl rounded-xl"
+            id="findBtn"
           >
             НАЙТИ
           </button>
         </div>
         <div
-          class="flex snap-y gap-8 snap-mandatory overflow-y-auto h-[450px] flex-col"
+          class="flex snap-y div w-[65%] gap-8 snap-mandatory overflow-y-auto h-[450px] flex-col"
           id="nameList"
         >
           <div
-            class="flex snap-start items-center border-4 p-6 gap-96 rounded-xl border-white"
+            class="flex snap-start justify-between bg-white items-center p-6 rounded-xl"
           >
-            <a href="" class="text-white text-3xl">ЛАБОРАТОРНАЯ 4</a>
-            <div class="flex gap-4">
+            <a
+              href="pages/Практические_работы_Белолипецкий_Н_Аdocx.pdf"
+              class="text-zinc-600 text-2xl transition duration-300 hover:scale-[110%] hover:text-blue-500"
+              id="linkLab"
+              >Отчет работы 1</a
+            >
+
+            <div class="flex items-center gap-4">
               <a
                 href="https://github.com/CHAPABEL/hochu-tea/blob/main/scripts/script.js"
+                class="pr-4 pb-1 pt-1 pl-4 transition duration-300 ease-in-out hover:shadow-2xl hover:scale-[110%] text-white bg-blue-500 text-2xl rounded-xl"
               >
-                <button
-                  class="p-3 transition duration-300 ease-in-out hover:shadow-2xl hover:scale-[110%] text-zinc-600 bg-white text-3xl rounded-xl"
-                >
-                  КОД
-                </button></a
-              >
-              <button
-                class="p-3 transition duration-300 ease-in-out hover:shadow-2xl hover:scale-[110%] text-zinc-600 bg-white text-3xl rounded-xl"
+                КОД
+              </a>
+              <a
+                href="pages/Lab1.html"
+                class="pr-4 pb-1 pt-1 pl-4 transition duration-300 ease-in-out hover:shadow-2xl hover:scale-[110%] text-white bg-blue-500 text-2xl rounded-xl"
               >
                 ОТКРЫТЬ
-              </button>
+              </a>
             </div>
           </div>
         </div>
