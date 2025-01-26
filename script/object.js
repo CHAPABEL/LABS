@@ -96,7 +96,27 @@ export const array = [
 ];
 
 export const erand = {
-  0: () => alert("dfsdfsdfafadf"),
+  0: () =>
+    alert(
+      "Посмотрите на мой гитхаб как я сделал этот сайт, https://github.com/CHAPABEL/LABS/blob/master/script/secondLabScript.js"
+    ),
   1: () => alert("sadasdd"),
   2: () => alert("sd"),
+  3: () => alert("sd"),
+  4: () => alert("sd"),
+  5: () => alert("sd"),
+  6: () => alert("sd"),
+  7: () => alert("sd"),
+  8: () => alert("sd"),
+  9: () => alert("sd"),
+  10: () => alert("sd"),
+  11: () => alert("sd"),
+  12: () => alert("sd"),
+  13: () => alert("sd"),
+  14: () => alert("sd"),
+  15: () => alert("sd"),
+  16: () => alert("sd"),
+  17: () => alert("sd"),
+  18: () => alert("sd"),
+  19: () => alert("sd"),
 };
