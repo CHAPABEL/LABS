@@ -13,30 +13,24 @@
           src="assets/logo.svg"
           class="w-32 transition-all duration-300 hover:scale-[110%]"
       /></a>
-      <span class="text-xl text-zinc-500">Белолипецкий Н.А.</span>
+      <div class="flex items-center gap-8">
+      <h1 class="text-xl text-zinc-500" id="name">Белолипецкий Н. А.</h1>
+      <a href="https://github.com/CHAPABEL" class=""
+      ><img
+        src="/assets/Git.png"
+        class="w-16 transition duration-200 hover:scale[110%]"
+    /></a>
+  </div>
     </header>
     <main>
-      <section class="flex flex-col gap-8 items-center">
-        <h1 class="text-4xl text-zinc-500" id="name">Работы студента</h1>
-        <div class="flex gap-12">
-          <div class="flex items-center gap-5 flex-col">
-            <div class="flex items-center gap-4">
-              <span class="text-2xl text-zinc-500">ЛАБОРАТОРНАЯ</span>
-              <select
-                class="text-2xl bg-blue-500 text-white rounded-xl p-2"
-                id="numWork"
+      <section class="flex flex-col mt-16 gap-8 items-center">
+              <a
+                href="https://disk.yandex.ru/client/disk"
+                class="pr-4 pb-1 pt-1 pl-4 transition duration-300 ease-in-out hover:shadow-2xl hover:scale-[110%] text-white bg-blue-500 text-2xl rounded-xl"
+                >Отчет лабораторных</a
               >
-                <option>n</option>
-              </select>
-            </div>
-          </div>
-          <button
-            class="pr-4 pb-1 pt-1 pl-4 transition duration-300 ease-in-out hover:shadow-2xl hover:scale-[110%] text-white bg-blue-500 text-2xl rounded-xl"
-            id="findBtn"
-          >
-            НАЙТИ
-          </button>
         </div>
+
         <div
           class="flex snap-y div w-[65%] gap-8 snap-mandatory overflow-y-auto h-[450px] flex-col"
           id="nameList"
@@ -44,13 +38,13 @@
           <div
             class="flex snap-start justify-between bg-white items-center p-6 rounded-xl"
           >
-            <a
-              href="pages/Практические_работы_Белолипецкий_Н_Аdocx.pdf"
-              class="text-zinc-600 text-2xl transition duration-300 hover:scale-[110%] hover:text-blue-500"
+            <p
+              class="text-zinc-600 text-2xl "
               id="linkLab"
-              target="_blank"
-              >Отчет работы 1</a
+        
             >
+              Лабораторная работа 1
+            </p>
 
             <div class="flex items-center gap-4">
               <a
@@ -61,6 +55,31 @@
               </a>
               <a
                 href="pages/Lab1.html"
+                class="pr-4 pb-1 pt-1 pl-4 transition duration-300 ease-in-out hover:shadow-2xl hover:scale-[110%] text-white bg-blue-500 text-2xl rounded-xl"
+              >
+                ОТКРЫТЬ
+              </a>
+            </div>
+          </div>
+          <div
+            class="flex snap-start justify-between bg-white items-center p-6 rounded-xl"
+          >
+            <p
+              class="text-zinc-600 text-2xl "
+              id="linkLab"
+            >
+              Практическая работа 1
+            </p>
+
+            <div class="flex items-center gap-4">
+              <a
+                href="https://github.com/CHAPABEL/LABS/blob/master/script/secondLabScript.js"
+                class="pr-4 pb-1 pt-1 pl-4 transition duration-300 ease-in-out hover:shadow-2xl hover:scale-[110%] text-white bg-blue-500 text-2xl rounded-xl"
+              >
+                КОД
+              </a>
+              <a
+                href="pages/Lab2.html"
                 class="pr-4 pb-1 pt-1 pl-4 transition duration-300 ease-in-out hover:shadow-2xl hover:scale-[110%] text-white bg-blue-500 text-2xl rounded-xl"
               >
                 ОТКРЫТЬ

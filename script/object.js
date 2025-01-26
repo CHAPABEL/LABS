@@ -74,7 +74,7 @@ export const array = [
     title:
       " Создайте переменную a со значением -100. Выведите это значение на экран.",
     action: () => alert("-100"),
-    code: "let a = -100; alert(a);",
+    code: "let a = -100; \n alert(a);",
   },
   {
     num: " ",
