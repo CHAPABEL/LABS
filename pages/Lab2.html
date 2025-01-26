@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Document</title>
+  </head>
+  <body class="bg-neutral-100 w-[90%] ml-auto mr-auto">
+    <header class="pt-6 flex justify-between items-center">
+      <a href="/index.html"
+        ><img
+          src="/assets/logo.svg"
+          class="w-32 transition duration-300 hover:scale-[110%]"
+          alt="Logo"
+      /></a>
+      <span class="text-xl text-zinc-500">Белолипецкий Н.А.</span>
+    </header>
+    <main>
+      <section
+        class="flex flex-col ml-auto mr-auto gap-4 mt-24 p-8 bg-white rounded-xl w-[1100px]"
+        id="parantList"
+      >
+        <div class="grid grid-cols-[150px_400px_208px] border-b-4 pb-4">
+          <span class="text-2xl w-">Номер</span>
+          <span class="text-2xl">Задание</span>
+          <span class="text-2xl ml-48">Выполнение</span>
+        </div>
+        <!-- <div
+          class="grid grid-cols-3 border-b-4 pb-4 items-center"
+          id="workList"
+        >
+          <span class="text-2xl">1</span>
+          <h1 class="text-2xl">
+            Создайте файл со скриптом. Подключите его к вашему HTML файлу.
+            Проверьте его работу.
+          </h1>
+          <button
+            class="bg-blue-500 text-2xl text-white w-52 rounded-xl transition duration-300 hover:scale-[110%]"
+          >
+            Run
+          </button>
+        </div> -->
+      </section>
+    </main>
+    <script type="module" src="/script/secondLabScript.js"></script>
+  </body>
+</html>
