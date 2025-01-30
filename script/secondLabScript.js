@@ -1,6 +1,5 @@
 import { array } from "./object.js";
 
-console.log("array");
 const closeBtn = document.getElementById("closeBtn");
 const parent = document.getElementById("parantList");
 const runBtn = document.getElementById("runBtn");
