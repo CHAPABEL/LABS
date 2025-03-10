@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Калькулятор с синусами и дробями</title>
+    <!-- Подключаем MathJax для отображения формул -->
+    <script
+      type="text/javascript"
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"
+    ></script>
+
+    <!-- Подключаем math.js для вычислений -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.0/math.js"></script>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f4f4f4;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      .input-area {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+      input[type="text"] {
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      button {
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+      .result {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .formula {
+        font-size: 24px;
+        margin-top: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Калькулятор с синусами и дробями</h1>
+      <div class="input-area">
+        <input
+          type="text"
+          id="expression"
+          placeholder="Введите выражение (например, sin(30) + 1/2)"
+        />
+        <button onclick="calculate()">Вычислить</button>
+      </div>
+      <div class="result" id="result"></div>
+      <div class="formula" id="formula"></div>
+    </div>
+
+    <script>
+      function calculate() {
+        const input = document.getElementById("expression").value;
+        const resultElement = document.getElementById("result");
+        const formulaElement = document.getElementById("formula");
+
+        try {
+          // Преобразуем введённое выражение в формат, понятный math.js
+          const result = math.evaluate(input);
+
+          // Выводим результат вычисления
+          resultElement.textContent = "Результат: " + result;
+
+          // Отображаем формулу с помощью MathJax
+          formulaElement.textContent = input;
+          MathJax.Hub.Queue(["Typeset", MathJax.Hub, formulaElement]);
+        } catch (error) {
+          resultElement.textContent = "Ошибка в выражении";
+        }
+      }
+    </script>
+  </body>
+</html>
